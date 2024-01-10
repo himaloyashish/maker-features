@@ -1,6 +1,7 @@
-const { createBrowserRouter } = require("react-router-dom");
-const { default: Main } = require("../layout/Main");
-const { default: Home } = require("../page/Home/Home");
+import { createBrowserRouter } from "react-router-dom";
+import Home from "../page/Home/Home";
+import Main from "../layout/Main";
+
 
 const router = createBrowserRouter([
     {
@@ -14,3 +15,5 @@ const router = createBrowserRouter([
         ]
     }
 ])
+
+export default router;
